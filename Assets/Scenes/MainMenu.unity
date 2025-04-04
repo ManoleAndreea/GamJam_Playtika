@@ -583,6 +583,8 @@ GameObject:
   - component: {fileID: 1331545468}
   - component: {fileID: 1331545467}
   - component: {fileID: 1331545466}
+  - component: {fileID: 1331545470}
+  - component: {fileID: 1331545469}
   m_Layer: 5
   m_Name: START
   m_TagString: Untagged
@@ -704,6 +706,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331545464}
   m_CullTransparentMesh: 1
+--- !u!114 &1331545469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331545464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b7b70118f3a7748a075a6d17ae33c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonTransform: {fileID: 0}
+  buttonText: {fileID: 0}
+  buttonImage: {fileID: 0}
+  glitchFrequency: 2
+  glitchDuration: 0.08
+  glitchColors: []
+--- !u!114 &1331545470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331545464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ec0f7e3e5974d4cb3fdc47a79e6379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftAmount: 10
+  speed: 10
 --- !u!1 &1497221244
 GameObject:
   m_ObjectHideFlags: 0

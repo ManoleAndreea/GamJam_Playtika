@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 35182910753af89449025ede3c2cc094
+guid: b9451067faf709a4d9e710bd10dba53d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3166427134395846737
-    second: telefon cu receptor-01_0
+      213: 6404936537924192905
+    second: Paper-01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: telefon cu receptor-01_0
+      name: Paper-01_0
       rect:
         serializedVersion: 2
         x: 2863
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: faf6d273c479e04d0800000000000000
-      internalID: -3166427134395846737
+      spriteID: 98a44efa8d7e2e850800000000000000
+      internalID: 6404936537924192905
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      telefon cu receptor-01_0: -3166427134395846737
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
