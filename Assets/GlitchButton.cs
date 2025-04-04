@@ -17,21 +17,21 @@ public class GlitchUIButton : MonoBehaviour
 
     void Start()
     {
-        originalPos = buttonTransform.anchoredPosition;
-        originalColor = buttonText.color;
+        originalPos=buttonTransform.anchoredPosition;
+        originalColor=buttonText.color;
         InvokeRepeating(nameof(DoGlitch), glitchFrequency, glitchFrequency);
     }
 
     void DoGlitch()
     {
-        float offset = Random.Range(-4f, 4f);
-        buttonTransform.anchoredPosition = originalPos + new Vector3(offset, offset, 0);
+        float offset=Random.Range(-4f, 4f);
+        buttonTransform.anchoredPosition=originalPos+new Vector3(offset, offset, 0);
 
-        if (glitchColors.Length > 0)
+        if (glitchColors.Length>0)
         {
-            buttonText.color = glitchColors[Random.Range(0, glitchColors.Length)];
-            if (buttonImage != null)
-                buttonImage.color = glitchColors[Random.Range(0, glitchColors.Length)];
+            buttonText.color=glitchColors[Random.Range(0, glitchColors.Length)];
+            if (buttonImage!=null)
+                buttonImage.color=glitchColors[Random.Range(0, glitchColors.Length)];
         }
 
         Invoke(nameof(ResetGlitch), glitchDuration);
@@ -39,9 +39,9 @@ public class GlitchUIButton : MonoBehaviour
 
     void ResetGlitch()
     {
-        buttonTransform.anchoredPosition = originalPos;
-        buttonText.color = originalColor;
-        if (buttonImage != null)
-            buttonImage.color = Color.white;
+        buttonTransform.anchoredPosition=originalPos;
+        buttonText.color=originalColor;
+        if (buttonImage!=null)
+            buttonImage.color=Color.white;
     }
 }
