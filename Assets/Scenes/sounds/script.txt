@@ -1,0 +1,23 @@
+Bell: "This is it... The moment I’ve waited for." // r1bell - 3sec
+Bell: "Who could be calling me now?" //r2bell - 1 sec
+Gray: "Time waits for no one, Bell." //r1gray - 2 sec
+
+*Bell gets transported to the phone booth*
+
+Bell: "Where..., where am I? What are these objects? I should investigate." // r3bell - 5 sec
+
+*Bell starts playing with the objects around and after he finishes with the first puzzle, he hears a voice*
+
+Gray: "Fascinating, isn’t it? Even when time fractures, you still manage to be first." // r2gray - 6 sec
+Gray: "I gave the world a voice, Bell... but it was your name they remembered. Now, you’ll walk through the echoes of stolen time—each puzzle a fragment of the truth you rewrote." // r3gray - 11 sec
+Bell: "Gray...? I haven’t seen him in years. The last thing I remember is that he was working on a telephone too... trying to patent it." // r4bell - 9 sec
+
+*Bell goes on to do the second puzzle and after he finishes that, more informations are revealed, info that help the player to realise what is going on*
+
+Gray: "You never looked back, did you? Too busy basking in the applause to hear the silence you left behind. They called you a pioneer. But I was just… too late."
+
+Bell: "Gray...? I—I didn’t know. I thought we were both working toward the same dream."
+
+Gray: "We were. Until you made sure it had only your name on it."
+
+Bell: "He’s rewriting history... One puzzle at a time."
