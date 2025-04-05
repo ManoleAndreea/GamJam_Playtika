@@ -84,6 +84,9 @@ public class PhoneDialPuzzle : MonoBehaviour
             Debug.Log("[Puzzle] ✅ Cod corect!");
             paper.SetActive(true);
             audioSource.PlayOneShot(paperSound);
+
+             PlayerPrefs.SetInt("PuzzleTelefonRezolvat", 1);
+            PlayerPrefs.Save();
         }
         else
         {
