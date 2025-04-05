@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cufaropen-01_0: -7639714992110148434
+      Cufaropen-01_1: 4690845071870540040
+      Cufaropen-01_2: -1811643810647965815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
