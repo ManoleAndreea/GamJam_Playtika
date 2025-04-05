@@ -14,55 +14,44 @@ public class RotaryDialController : MonoBehaviour, IPointerDownHandler, IPointer
     private float startAngle = 0f;
     private bool returning = false;
 
-void Update()
-{
-    if (isDragging)
+    void Update()
     {
-        Vector2 from = Vector2.up; // Referință de la verticală
-        Vector2 current = (Input.mousePosition - dial.position).normalized;
+        if (isDragging)
+        {
+            Vector2 dir = Input.mousePosition - dial.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
 
-        float angle = Vector2.SignedAngle(from, current);
-        float delta = angle - startAngle;
-        delta = Mathf.Clamp(delta, maxRotation, 0f);
+            float delta = angle - startAngle;
+            delta = Mathf.Clamp(delta, maxRotation, 0f);
+            currentAngle = delta;
+            dial.localEulerAngles = new Vector3(0, 0, currentAngle);
+        }
+        else if (returning)
+        {
+            currentAngle = Mathf.MoveTowards(currentAngle, 0f, returnSpeed * Time.deltaTime);
+            dial.localEulerAngles = new Vector3(0, 0, currentAngle);
 
-        currentAngle = delta;
-        dial.localEulerAngles = new Vector3(0, 0, currentAngle);
-
-        Debug.Log($"[RotaryDial] Dragging... Angle: {currentAngle}");
+            if (Mathf.Approximately(currentAngle, 0f))
+                returning = false;
+        }
     }
-    else if (returning)
+
+    public void OnPointerDown(PointerEventData eventData)
     {
-        currentAngle = Mathf.MoveTowards(currentAngle, 0f, returnSpeed * Time.deltaTime);
-        dial.localEulerAngles = new Vector3(0, 0, currentAngle);
+        if (returning) return;
+        isDragging = true;
 
-        if (Mathf.Approximately(currentAngle, 0f))
-            returning = false;
+        Vector2 dir = Input.mousePosition - dial.position;
+        startAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
     }
-}
-
-public void OnPointerDown(PointerEventData eventData)
-{
-    if (returning) return;
-    isDragging = true;
-
-    Vector2 from = Vector2.up;
-    Vector2 start = (Input.mousePosition - dial.position).normalized;
-
-    startAngle = Vector2.SignedAngle(from, start);
-    Debug.Log("[RotaryDial] Pointer DOWN. StartAngle: " + startAngle);
-}
 
     public void OnPointerUp(PointerEventData eventData)
     {
         if (!isDragging) return;
         isDragging = false;
 
-        Debug.Log("[RotaryDial] Pointer UP. FinalAngle: " + currentAngle);
-
-        // am crescut pragul de rotire ca să nu fie prea strict
         if (Mathf.Abs(currentAngle) < 20f)
         {
-            Debug.Log("[RotaryDial] Rotire prea mică, ignorat.");
             returning = true;
             return;
         }
@@ -72,17 +61,12 @@ public void OnPointerDown(PointerEventData eventData)
 
         if (Mathf.Abs(currentAngle - (digit * -36f)) <= snapThreshold)
         {
-            Debug.Log("[RotaryDial] Ai format cifra: " + digit);
             puzzleScript.PressDigit(digit);
-        }
-        else
-        {
-            Debug.Log("[RotaryDial] Nu s-a nimerit exact pe cifra. Unghi actual: " + currentAngle + ", cifra calculată: " + digit);
         }
 
         returning = true;
     }
-
+    
     public void DialToDigit(int digit)
     {
         if (returning || isDragging) return;
