@@ -15,6 +15,11 @@ public class StoryController : MonoBehaviour
 
     public GameObject blackFadePanel;
     public AudioSource phoneRing;
+    public AudioSource Bell1;
+
+    public AudioSource Bell2;
+
+    public AudioSource Gray1;
 
     public string nextSceneName = "Scena2";
 
@@ -32,12 +37,14 @@ public class StoryController : MonoBehaviour
     {
         // 🧍 Bell zice prima replică
         bellText.text = "This is it... The moment I’ve waited for.";
-        yield return new WaitForSeconds(10.5f);
+        Bell1.Play();
+        yield return new WaitForSeconds(3.5f);
 
         // 📞 Telefonul sună
         phoneRing.Play();
+        Bell2.Play();
         bellText.text = "Who could be calling me now?";
-        yield return new WaitForSeconds(6.5f);
+        yield return new WaitForSeconds(3.5f);
 
         // 🔄 Bell dispare
         bellTextboxPanel.SetActive(false);
@@ -46,8 +53,9 @@ public class StoryController : MonoBehaviour
         // 👤 Gray apare
         grayImage.SetActive(true);
         grayTextboxPanel.SetActive(true);
+        Gray1.Play();
         grayText.text = "Time waits for no one, Bell.";
-        yield return new WaitForSeconds(6.5f);
+        yield return new WaitForSeconds(3.5f);
 
         // 🌫️ Fade + schimbă scena
         yield return StartCoroutine(FadeToBlack());
