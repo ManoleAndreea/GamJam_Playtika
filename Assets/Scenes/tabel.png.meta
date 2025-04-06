@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 018600eb7efbd7848835fa5982815389
+guid: f3517ca514ef5714fad832808a3ecfc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1573948771615047340
-    second: bg telefon-01-01_0
+      213: 6711490047709719388
+    second: tabel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg telefon-01-01_0
+      name: tabel_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8000
-        height: 4500
+        width: 3828
+        height: 3738
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caef6c2911ac7d510800000000000000
-      internalID: 1573948771615047340
+      spriteID: c5bae4fa3a0042d50800000000000000
+      internalID: 6711490047709719388
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg telefon-01-01_0: 1573948771615047340
+      tabel_0: 6711490047709719388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
