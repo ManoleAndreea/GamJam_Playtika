@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -54,5 +55,7 @@ public class StoryController2 : MonoBehaviour
         bellText.text = "Gray...? I haven’t seen him in years. The last thing I remember is that he was working on a telephone too... trying to patent it.";
         r4bell.Play();
         yield return new WaitForSeconds(r4bell.clip.length);
+
+        SceneManager.LoadScene("Scena3");
     }
 }
