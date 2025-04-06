@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -67,6 +68,13 @@ public class PhoneDialPuzzle : MonoBehaviour
         receiverImage.SetActive(false);
     }
 
+    IEnumerator GoToCinematicScene()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Scena4");
+    }
+
+
     void CheckCode()
     {
         bool correct = true;
@@ -84,6 +92,10 @@ public class PhoneDialPuzzle : MonoBehaviour
             Debug.Log("[Puzzle] ✅ Cod corect!");
             paper.SetActive(true);
             audioSource.PlayOneShot(paperSound);
+
+            PlayerPrefs.SetInt("PuzzleTelefonRezolvat", 1);
+            PlayerPrefs.Save();
+            StartCoroutine(GoToCinematicScene());
         }
         else
         {

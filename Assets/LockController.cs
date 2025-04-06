@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LockController : MonoBehaviour
 {
     public Dial dial1;
@@ -54,5 +54,11 @@ public class LockController : MonoBehaviour
             audioSource.PlayOneShot(unlockSound);
 
         Debug.Log("✅ Cufărul a fost deblocat cu codul 1254!");
+
+        Invoke("GoToNextScene", 2f);
+    }
+    void GoToNextScene()
+    {
+        SceneManager.LoadScene("Scena5");
     }
 }
