@@ -25,7 +25,7 @@ public class StoryController : MonoBehaviour
 
     void Start()
     {
-        // Ascundem totul în afară de Bell la început
+    
         bellImage.SetActive(true);
         bellTextboxPanel.SetActive(true);
         grayImage.SetActive(false);
@@ -35,29 +35,29 @@ public class StoryController : MonoBehaviour
 
     IEnumerator PlaySceneSequence()
     {
-        // 🧍 Bell zice prima replică
+
         bellText.text = "This is it... The moment I’ve waited for.";
         Bell1.Play();
         yield return new WaitForSeconds(3.5f);
 
-        // 📞 Telefonul sună
+      
         phoneRing.Play();
         Bell2.Play();
         bellText.text = "Who could be calling me now?";
         yield return new WaitForSeconds(3.5f);
 
-        // 🔄 Bell dispare
+      
         bellTextboxPanel.SetActive(false);
         bellImage.SetActive(false);
 
-        // 👤 Gray apare
+
         grayImage.SetActive(true);
         grayTextboxPanel.SetActive(true);
         Gray1.Play();
         grayText.text = "Time waits for no one, Bell.";
         yield return new WaitForSeconds(3.5f);
 
-        // 🌫️ Fade + schimbă scena
+   
         yield return StartCoroutine(FadeToBlack());
         SceneManager.LoadScene(nextSceneName);
     }

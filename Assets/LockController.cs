@@ -54,6 +54,8 @@ public class LockController : MonoBehaviour
             audioSource.PlayOneShot(unlockSound);
 
         Debug.Log("✅ Cufărul a fost deblocat cu codul 1254!");
+        PlayerPrefs.SetInt("Puzzle2Completed", 1);
+        PlayerPrefs.Save();
 
         Invoke("GoToNextScene", 2f);
     }

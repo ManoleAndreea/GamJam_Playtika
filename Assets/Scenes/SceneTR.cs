@@ -7,7 +7,7 @@ public class SceneTR : MonoBehaviour
 {
     public Image fadePanel;
     public float fadeDuration = 1f;
-    public string sceneToLoad = "NextScene"; // setează în Inspector
+    public string sceneToLoad = "NextScene"; 
 
     private bool isFading = false;
 
