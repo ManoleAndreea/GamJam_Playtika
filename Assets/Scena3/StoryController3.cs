@@ -5,7 +5,6 @@ using TMPro;
 public class Scene3Intro : MonoBehaviour
 {
     [Header("Audio")]
-   // public AudioClip r3bell;
     public AudioSource audioSource;
 
     [Header("Bell UI")]
@@ -14,24 +13,29 @@ public class Scene3Intro : MonoBehaviour
     public TextMeshProUGUI bellText;
 
     [Header("Gameplay")]
-    public GameObject gameplayRoot; // obiectul care conține puzzle-uri, controllere etc.
+    public GameObject gameplayRoot;
 
     void Start()
     {
-        // La început: dezactivez gameplay-ul
-        gameplayRoot.SetActive(false);
+        // Verificăm dacă intro-ul a fost deja jucat
+        if (PlayerPrefs.GetInt("Scene3IntroPlayed", 0) == 1)
+        {
+            // Dacă da, trecem direct la gameplay
+            bellImage.SetActive(false);
+            bellTextboxPanel.SetActive(false);
+            gameplayRoot.SetActive(true);
+        }
+        else
+        {
+            // Dacă nu, rulăm intro-ul
+            gameplayRoot.SetActive(false);
+            bellImage.SetActive(true);
+            bellTextboxPanel.SetActive(true);
+            bellText.text = "Where..., where am I? What are these objects? I should investigate.";
 
-        // Activez dialogul lui Bell
-        bellImage.SetActive(true);
-        bellTextboxPanel.SetActive(true);
-        bellText.text = "Where..., where am I? What are these objects? I should investigate.";
-
-        // Redă replica
-       // audioSource.clip = r3bell;
-        audioSource.Play();
-
-        // Așteaptă 5 secunde și trece la gameplay
-        StartCoroutine(EndIntro());
+            audioSource.Play();
+            StartCoroutine(EndIntro());
+        }
     }
 
     IEnumerator EndIntro()
@@ -42,6 +46,10 @@ public class Scene3Intro : MonoBehaviour
         bellImage.SetActive(false);
         bellTextboxPanel.SetActive(false);
 
-        gameplayRoot.SetActive(true); // 🎮 dă drumul la joc
+        gameplayRoot.SetActive(true);
+
+        // ✅ Marcăm că intro-ul a fost redat
+        PlayerPrefs.SetInt("Scene3IntroPlayed", 1);
+        PlayerPrefs.Save();
     }
 }
