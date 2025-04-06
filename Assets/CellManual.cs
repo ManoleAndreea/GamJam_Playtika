@@ -5,6 +5,8 @@ public class CellManual : MonoBehaviour
     public Sprite[] sprites;
     private int state = 0;
     private SpriteRenderer sr;
+    public int checkpointNumber = 0;
+    public bool IsActive => state != 0;
 
     void Awake()
     {
