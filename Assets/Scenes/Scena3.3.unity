@@ -173,7 +173,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &26067416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -249,7 +253,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &37704851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -439,7 +447,7 @@ Transform:
   m_GameObject: {fileID: 66572776}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -273.76, y: -285.175, z: 0}
+  m_LocalPosition: {x: -251.61462, y: -320.65, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -635,7 +643,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &136582890
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -687,6 +699,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridRoot: {fileID: 1455997216}
+  gridWidth: 5
+  gridHeight: 5
 --- !u!4 &158247578
 Transform:
   m_ObjectHideFlags: 0
@@ -756,7 +770,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 3
+  x: 0
+  y: 0
 --- !u!65 &232574695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -859,7 +877,7 @@ Transform:
   m_GameObject: {fileID: 267960736}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -272.26, y: -283.715, z: 0}
+  m_LocalPosition: {x: -250.11462, y: -319.19, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -919,7 +937,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &288811660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1001,7 +1023,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: -5303373619972917475, guid: dfff08dc38b5428468194398db41e678, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1082,7 +1104,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 1
+  x: 0
+  y: 0
 --- !u!65 &340977078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1158,7 +1184,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &347328997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1487,7 +1517,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &430945402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1737,7 +1771,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &526350041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1813,7 +1851,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &548532948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2150,7 +2192,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &683132570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2423,7 +2469,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 6
+  x: 0
+  y: 0
 --- !u!65 &705267609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2586,7 +2636,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &877322561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2662,7 +2716,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 4
+  x: 0
+  y: 0
 --- !u!65 &950055500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2738,7 +2796,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 2
+  x: 0
+  y: 0
 --- !u!65 &971651167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3075,7 +3137,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1100283252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3151,7 +3217,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1115090166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3227,7 +3297,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1117472387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3330,7 +3404,7 @@ Transform:
   m_GameObject: {fileID: 1133307133}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -270.80957, y: -288.045, z: 0}
+  m_LocalPosition: {x: -248.66418, y: -323.52002, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3504,7 +3578,7 @@ Transform:
   m_GameObject: {fileID: 1154109612}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -275.23, y: -286.575, z: 0}
+  m_LocalPosition: {x: -253.08463, y: -322.05002, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3564,7 +3638,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1194451486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3667,7 +3745,7 @@ Transform:
   m_GameObject: {fileID: 1280814691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -276.73, y: -285.115, z: 0}
+  m_LocalPosition: {x: -254.58463, y: -320.59, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3727,7 +3805,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 5
+  x: 0
+  y: 0
 --- !u!65 &1338693312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3977,7 +4059,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1354903321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4140,7 +4226,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1449231301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4187,7 +4277,7 @@ Transform:
   m_GameObject: {fileID: 1455997215}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -273.8045, y: -285.316, z: -0.03868119}
+  m_LocalPosition: {x: -251.65, y: -320.8, z: -0.03868119}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4461,7 +4551,7 @@ Transform:
   m_GameObject: {fileID: 1588137827}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -275.2454, y: -282.225, z: 0}
+  m_LocalPosition: {x: -253.1, y: -317.7, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4548,7 +4638,7 @@ Transform:
   m_GameObject: {fileID: 1623588804}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -273.75, y: -285.075, z: 0}
+  m_LocalPosition: {x: -251.60461, y: -320.55002, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4695,7 +4785,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1818765860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4771,7 +4865,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &1821838261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5419,7 +5517,11 @@ MonoBehaviour:
   - {fileID: 4536961181142278371, guid: 51f7d580a5768044f8c47894026eb8f8, type: 3}
   - {fileID: 3939685194852400236, guid: 073f658df104e434f91bf62c29d24925, type: 3}
   - {fileID: 3703963627368631134, guid: 19da4b9b1c7ef1f42a0192855c3b2267, type: 3}
+  gridX: 0
+  gridY: 0
   checkpointNumber: 0
+  x: 0
+  y: 0
 --- !u!65 &2029344741
 BoxCollider:
   m_ObjectHideFlags: 0

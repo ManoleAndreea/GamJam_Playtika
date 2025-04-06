@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using System.Linq;
 
@@ -57,7 +58,10 @@ public class PuzzleValidator : MonoBehaviour
     }
 
     if (valid)
+       {
         Debug.Log("✅ Puzzle corect!");
+        SceneManager.LoadScene("Scena6");
+       } 
     else
         Debug.LogWarning("❌ Puzzle greșit.");
 }

@@ -65,6 +65,6 @@ public class StoryController5 : MonoBehaviour
         bellText.text = "He’s rewriting history... One puzzle at a time.";
         r6bell.Play();
         yield return new WaitForSeconds(r6bell.clip.length);
-        SceneManager.LoadScene("Scena3");
+        SceneManager.LoadScene("Scena3.11");
     }
 }
