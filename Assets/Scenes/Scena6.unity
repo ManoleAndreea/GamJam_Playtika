@@ -901,31 +901,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1041459425}
-  - component: {fileID: 1041459424}
+  - component: {fileID: 1041459426}
   m_Layer: 0
-  m_Name: StoryController3
+  m_Name: StoryController6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1041459424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041459423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bed50aea7876b4f46a06d9958b419441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 1445743672}
-  bellImage: {fileID: 1101751010}
-  bellTextboxPanel: {fileID: 1968364930}
-  bellText: {fileID: 1981892465}
-  gameplayRoot: {fileID: 1524672190}
 --- !u!4 &1041459425
 Transform:
   m_ObjectHideFlags: 0
@@ -941,6 +924,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1041459426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041459423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4268031fcf804494cac3910ead780388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r6gray: {fileID: 1445743672}
+  grayImage: {fileID: 1101751010}
+  grayTextboxPanel: {fileID: 1968364930}
+  grayText: {fileID: 1981892465}
 --- !u!1 &1092920941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +1053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -434.26, y: 301}
+  m_AnchoredPosition: {x: 436, y: 297}
   m_SizeDelta: {x: -868.7242, y: 256.3512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101751012
@@ -1077,7 +1076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9133818778108322294, guid: 1c98fc69814eaed409b9bba92d00a954, type: 3}
+  m_Sprite: {fileID: -6022337359400110510, guid: eaa48302f815fc94ba2700e32d51c728, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1212,8 +1211,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4a2bc70d4eb93f64b98255d2fda46724, type: 3}
-  m_Resource: {fileID: 8300000, guid: 4a2bc70d4eb93f64b98255d2fda46724, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bdeb15e6c27575c449cd7ca46c2850a0, type: 3}
+  m_Resource: {fileID: 8300000, guid: bdeb15e6c27575c449cd7ca46c2850a0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1400,7 +1399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3096839635505257314, guid: fa52523a4c25dd247905b6a037753b3b, type: 3}
+  m_Sprite: {fileID: 9148060383052296150, guid: e8fc29efe9b137940966daf2232876b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
